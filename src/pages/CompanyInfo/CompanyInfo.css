@@ -1,0 +1,24 @@
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.company-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.text {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.martin-headshot {
+  max-width: 80%;
+  height: auto;
+}
