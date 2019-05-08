@@ -1,17 +1,7 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .text-div {
-  width: 50%;
-  margin: 0 auto;
+  /* width: 50%;
+  margin: 0 auto; */
   font-size: 2rem;
   color: #649ab3;
-  text-align: center;
-}
-
-.home-logo {
-  max-width: 100%;
-  height: auto;
+  /* text-align: center; */
 }

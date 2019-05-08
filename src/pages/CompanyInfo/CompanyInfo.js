@@ -5,14 +5,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
+import PageHeader from '../../components/PageHeader/PageHeader'
 
 export default class CompanyInfo extends Component {
   render() {
     return (
       <Container>
-        <Row className="justify-content-center">
-          <h1 className="page-header">Company Info</h1>
-        </Row>
+        <PageHeader title="Company Info" />
         <Row>
           <Image src={MartinHeadshot} alt="Martin Lucero" />
 
