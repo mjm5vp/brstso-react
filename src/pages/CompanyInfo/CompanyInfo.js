@@ -13,9 +13,11 @@ export default class CompanyInfo extends Component {
       <Container>
         <PageHeader title="Company Info" />
         <Row>
-          <Image src={MartinHeadshot} alt="Martin Lucero" />
+          <Col className="col-xs-4 justify-content-center">
+            <Image src={MartinHeadshot} alt="Martin Lucero" fluid />
+          </Col>
 
-          <Col className="px-5">
+          <Col className="col-xs-6">
             <p>
               Martin Lucero founded Bright Star Solutions LLC in 2015. Martin
               has over 10 years of experience in Systems Engineering and Data
