@@ -4,3 +4,19 @@ h1 {
   color: #649ab3;
   font-family: Lato, sans-serif;
 }
+
+.companyInfoText {
+  color: #649ab3;
+  flex-wrap: nowrap;
+}
+
+.noDisplay {
+  opacity: 0;
+  margin-left: -1rem;
+}
+
+.display {
+  opacity: 1;
+  margin-left: 0rem;
+  transition: 0.8s ease-in-out;
+}

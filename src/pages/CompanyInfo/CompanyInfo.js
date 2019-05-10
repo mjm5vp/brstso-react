@@ -8,23 +8,47 @@ import Image from 'react-bootstrap/Image'
 import PageHeader from '../../components/PageHeader/PageHeader'
 
 export default class CompanyInfo extends Component {
+  state = {
+    headshotClass: 'noDisplay',
+    paragraph1Class: 'noDisplay',
+    paragraph2Class: 'noDisplay'
+  }
+
+  fadeInImage = () => {
+    this.setState({ headshotClass: 'display' })
+    setTimeout(() => {
+      this.setState({ paragraph1Class: 'display' })
+    }, 800)
+    setTimeout(() => {
+      this.setState({ paragraph2Class: 'display' })
+    }, 1100)
+  }
+
   render() {
     return (
       <Container>
         <PageHeader title="Company Info" />
         <Row>
           <Col className="col-xs-4 justify-content-center">
-            <Image src={MartinHeadshot} alt="Martin Lucero" fluid />
+            <Image
+              className={this.state.headshotClass}
+              onLoad={() => {
+                this.fadeInImage()
+              }}
+              src={MartinHeadshot}
+              alt="Martin Lucero"
+              fluid
+            />
           </Col>
 
-          <Col className="col-xs-6">
-            <p>
+          <Col className="col-xs-6 companyInfoText">
+            <p className={this.state.paragraph1Class}>
               Martin Lucero founded Bright Star Solutions LLC in 2015. Martin
               has over 10 years of experience in Systems Engineering and Data
               Analysis.
             </p>
 
-            <p>
+            <p className={this.state.paragraph2Class}>
               Martin started in the private sector, working for Telecom giant,
               Nortel, until switching to supporting DHS in 2009. Martin has
               supported Customs and Border Protection and Citizenship and

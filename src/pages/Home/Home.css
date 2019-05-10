@@ -1,7 +1,13 @@
 .text-div {
-  /* width: 50%;
-  margin: 0 auto; */
   font-size: 2rem;
   color: #649ab3;
-  /* text-align: center; */
+}
+
+.noDisplayHome {
+  opacity: 0;
+}
+
+.displayHome {
+  opacity: 1;
+  transition: 2s;
 }

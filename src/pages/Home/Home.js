@@ -8,13 +8,31 @@ import './Home.css'
 import Image from 'react-bootstrap/Image'
 
 export default class Home extends Component {
+  state = {
+    imageClass: 'noDisplayHome',
+    textClass: 'noDisplayHome'
+  }
+
+  fadeInImage = () => {
+    this.setState({ imageClass: 'displayHome' })
+    setTimeout(() => {
+      this.setState({ textClass: 'displayHome' })
+    }, 500)
+  }
+
   render() {
     return (
       <Container>
-        <Image src={HomeLogo} alt="BrightStar Solutions" fluid />
+        <Image
+          className={this.state.imageClass}
+          onLoad={() => this.fadeInImage()}
+          src={HomeLogo}
+          alt="BrightStar Solutions"
+          fluid
+        />
         <Row className="justify-content-center text-div">
           <Col className="col-md-8">
-            <p className="text-center">
+            <p className={`text-center ${this.state.textClass}`}>
               Bright Star Solutions is a minority-owned small business based in
               Washington, DC that specializes in providing systems engineering
               and test and evaluation services to Federal clients.
