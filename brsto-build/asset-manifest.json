@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03b065ce.chunk.css",
+    "main.js": "/static/js/main.032e1e8e.chunk.js",
+    "main.js.map": "/static/js/main.032e1e8e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.31dc1f8f.chunk.js": "/static/js/2.31dc1f8f.chunk.js",
+    "static/js/2.31dc1f8f.chunk.js.map": "/static/js/2.31dc1f8f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cfc880cf2b7069ff30faa6a97ff3e5a2.js": "/precache-manifest.cfc880cf2b7069ff30faa6a97ff3e5a2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.03b065ce.chunk.css.map": "/static/css/main.03b065ce.chunk.css.map",
+    "static/media/email.png": "/static/media/email.eb54cfab.png",
+    "static/media/logo.png": "/static/media/logo.11e0d4f2.png",
+    "static/media/martin-lucero-headshot.png": "/static/media/martin-lucero-headshot.3e8b26fc.png",
+    "static/media/small-logo.png": "/static/media/small-logo.e548d8b5.png"
+  }
+}
